@@ -2562,6 +2562,9 @@ div.sharedaddy div.sd-block {
 .social-links ul a[href*="github.com"]:before {
   content: "\f200";
 }
+.social-links ul a[href*="gist.github.com"]:before {
+  content: "\f425";
+}
 .social-links ul a[href*="tumblr.com"]:before {
   content: "\f214";
 }
