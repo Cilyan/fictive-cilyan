@@ -33,7 +33,7 @@ $gravatar = get_theme_mod( 'fictive_gravatar_email', get_option( 'admin_email' )
 			<?php if ( '' !=  $gravatar ) : ?>
 				<div class="header-avatar">
 					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-						<img src="<?php echo esc_url( fictive_get_gravatar() ); ?>" width="70" height="70" alt="">
+						<img src="<?php echo esc_url( wp_get_attachment_image_src(118)[0] ); ?>" width="70" height="70" alt="">
 					</a>
 				</div>
 			<?php endif; ?>
