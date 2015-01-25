@@ -94,8 +94,6 @@ function fictive_scripts() {
 	wp_enqueue_style( 'fictive-open-sans' );
 	wp_enqueue_style( 'fictive-bitter' );
 
-	wp_enqueue_style( 'genericons', get_template_directory_uri() . '/genericons/genericons.css', '3.0.3' );
-
 	wp_enqueue_script( 'fictive-script', get_template_directory_uri() . '/js/fictive.js', array( 'jquery' ), '20140403', true );
 
 	wp_enqueue_script( 'fictive-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );

@@ -1,0 +1,102 @@
+/* =Navigation */
+.site-content [class*="navigation"] {
+  margin-bottom: 0;
+  position: relative;
+  width: 100%;
+}
+
+.site-content [class*="paging-navigation"] a,
+.site-content [class*="post-navigation"] a {
+  color: white;
+}
+.site-content [class*="paging-navigation"] a:before,
+.site-content [class*="post-navigation"] a:before {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background: #ada393;
+  border-radius: 50%;
+  color: white;
+  display: block;
+  font-size: 49px;
+  line-height: 90px;
+  opacity: 0.25;
+  position: fixed;
+  top: 50%;
+  text-decoration: none;
+  width: 90px;
+  height: 90px;
+  content: $fa-var-arrow-left;
+  z-index: 1;
+}
+@media screen and (max-width: 51em) {
+  .site-content [class*="paging-navigation"] a:before,
+  .site-content [class*="post-navigation"] a:before {
+    font-size: 28px;
+    line-height: 60px;
+    width: 60px;
+    height: 60px;
+  }
+}
+.site-content [class*="paging-navigation"] a:hover:before,
+.site-content [class*="post-navigation"] a:hover:before {
+  opacity: 1;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.site-content [class*="paging-navigation"] .nav-previous a:before,
+.site-content [class*="post-navigation"] .nav-previous a:before {
+  left: 0;
+  margin-left: -48px;
+  text-align: right;
+}
+@media screen and (max-width: 51em) {
+  .site-content [class*="paging-navigation"] .nav-previous a:before,
+  .site-content [class*="post-navigation"] .nav-previous a:before {
+    margin-left: -35px;
+  }
+}
+.site-content [class*="paging-navigation"] .nav-next a:before,
+.site-content [class*="post-navigation"] .nav-next a:before {
+  right: 0;
+  margin-right: -48px;
+  text-align: left;
+  content: $fa-var-arrow-right;
+}
+@media screen and (max-width: 51em) {
+  .site-content [class*="paging-navigation"] .nav-next a:before,
+  .site-content [class*="post-navigation"] .nav-next a:before {
+    margin-right: -35px;
+  }
+}
+
+.comment-navigation:before,
+.comment-navigation:after {
+  content: "";
+  display: table;
+}
+
+.comment-navigation:after {
+  clear: both;
+}
+
+.site-content .comment-navigation {
+  margin-bottom: 24px;
+}
+@media screen and (max-width: 51em) {
+  .site-content .comment-navigation {
+    padding: 0 24px;
+  }
+}
+.site-content .comment-navigation .nav-previous {
+  float: left;
+  width: 50%;
+}
+.site-content .comment-navigation .nav-next {
+  float: right;
+  text-align: right;
+  width: 50%;
+}
