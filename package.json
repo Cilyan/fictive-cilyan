@@ -1,9 +1,0 @@
-{
-  "name": "fictive-cilyan",
-  "version": "0.0.1",
-  "description": "A Wordpress theme for cilyan.org based on Fictive",
-  "devDependencies": {
-    "grunt": "~0.4.5",
-    "grunt-contrib-compress": "~0.13.0"
-  }
-}
