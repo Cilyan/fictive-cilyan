@@ -1,0 +1,78 @@
+/* =Layout */
+.site {
+  margin: 0 auto;
+  max-width: 60em;
+}
+@media screen and (max-width: 65em) {
+  .site {
+    max-width: 51em;
+  }
+}
+
+.site-content {
+  float: right;
+  width: 66%;
+  margin: 72px auto 0;
+}
+@media screen and (max-width: 65em) {
+  .site-content {
+    max-width: 51em;
+  }
+}
+@media screen and (max-width: 51em) {
+  .site-content {
+    clear: both;
+    float: none;
+    margin-top: 7px;
+    width: 100%;
+  }
+}
+
+.content-area {
+  float: left;
+  margin: 0 -30% 0 0;
+  width: 100%;
+}
+@media screen and (max-width: 51em) {
+  .content-area {
+    clear: both;
+    float: none;
+    margin: 0 auto;
+  }
+}
+
+.site-main {
+  margin: 0;
+}
+
+.site-footer {
+  clear: both;
+  color: #ada393;
+  font-size: 0.8125em;
+  line-height: 1.84615em;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin: 24px auto 0;
+  padding: 48px 0;
+  text-align: center;
+}
+.site-footer a {
+  color: #ada393;
+  text-decoration: none;
+}
+@media screen and (max-width: 51em) {
+  .site-footer {
+    margin: 0 auto;
+    padding: 24px;
+  }
+}
+
+.site-info {
+  margin: 0 auto;
+}
+@media screen and (max-width: 65em) {
+  .site-info {
+    max-width: 51em;
+  }
+}

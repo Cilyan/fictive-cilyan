@@ -1,0 +1,98 @@
+/* =Widgets */
+.widget {
+  font-size: 0.8125em;
+  line-height: 1.84615em;
+  margin: 24px 0;
+  position: relative;
+  overflow: hidden;
+}
+.widget select {
+  max-width: -webkit-calc(100% - 48px);
+  max-width: calc(100% - 48px);
+  margin-left: 24px;
+}
+.widget a {
+  text-decoration: none;
+}
+.widget ul {
+  list-style: none;
+  margin: 0;
+}
+.widget ul li {
+  border-bottom: 1px solid #e4e1dc;
+  list-style: none;
+  margin: 0;
+  padding: 12px 24px;
+}
+.widget ul li li {
+  border-bottom: 0;
+  padding: 6px 0 6px 12px;
+}
+.widget ul li li:last-child {
+  padding-bottom: 0;
+}
+.widget ul li:last-child {
+  border-bottom: 0;
+}
+
+.widget > ul:first-of-type > li:first-child {
+  padding-top: 0;
+}
+
+.widget-title {
+  font-size: 1.25em;
+  line-height: 1.2em;
+  border-bottom: 1px solid #e4e1dc;
+  color: #6f9d9f;
+  font-weight: bold;
+  margin: 12px 0;
+  padding: 12px 24px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.widget-title a {
+  color: #6f9d9f;
+}
+
+.widget input[type="text"] {
+	background: white;
+	padding: 11px !important;
+}
+
+.widget_search input {
+  background: white;
+  margin-left: 24px;
+  max-width: -webkit-calc(100% - 48px);
+  max-width: calc(100% - 48px);
+}
+.widget_search input[type="submit"] {
+  display: none;
+}
+@media screen and (max-width: 51em) {
+  .widget_search input[type="submit"] {
+    font-size: 1.25em;
+    line-height: 1.2em;
+    display: block;
+  }
+}
+
+.wp_widget_tag_cloud div,
+.widget_tag_cloud .tagcloud {
+  text-align: center;
+}
+.wp_widget_tag_cloud div a,
+.widget_tag_cloud .tagcloud a {
+  color: #bd5532;
+  text-decoration: none;
+}
+
+/* Calendar widget */
+#wp-calendar td, #wp-calendar th,
+#wp-calendar th {
+  text-align: center;
+}
+#wp-calendar caption {
+  font-weight: 700;
+  margin: 12px 0;
+  text-align: center;
+}
