@@ -31,6 +31,20 @@ function fictive_customize_register( $wp_customize ) {
 		'type'              => 'text',
 		'priority'          => 1,
 	) );
+	
+	$wp_customize->add_setting( 'fictive_avatar_image', array(
+		'default'           => null
+	) );
+	
+	$wp_customize->add_control(new WP_Customize_Image_Control(
+		$wp_customize,
+		'fictive_avatar_image',
+		array(
+			'label'      => __( 'Custom Avatar', 'fictive' ),
+			'section'    => 'fictive_theme_options',
+			'settings'   => 'fictive_avatar_image' 
+		)
+	));
 
 	$wp_customize->add_setting( 'fictive_sidebar', array(
 		'default'           => 'scroll',
