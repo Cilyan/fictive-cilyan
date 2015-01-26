@@ -28,8 +28,10 @@ task :releasecss => [target] do
     css_filename = "#{target}/#{basename}.css"
     unless uptodate?(css_filename, scss_files)
       puts "sass #{basename}.css"
+      # Substitute version number if necessary
+      indata = open(scss_file).read.sub("@@version@@", version)
       engine = Sass::Engine.new(
-        open(scss_file).read,
+        indata,
         :filename => scss_file,
         :style => "expanded",
         :syntax => :scss,
