@@ -2,7 +2,7 @@ require "gettext/tools"
 require 'sass'
 
 name = "fictive-cilyan"
-version = "0.1.0"
+version = "0.2.0"
 
 distdir = "dist"
 target = "#{distdir}/#{name}"
